@@ -1,41 +1,35 @@
-# 📊 Jatim Datathon Data Analysis
+# OpenData-Jatim
 
-A comprehensive data analysis and predictive modeling project developed for the **Jatim Datathon**, focusing on economic and business insights within East Java (Jawa Timur).
+**East Java economic analysis — Composite Risk Score, XGBoost surrogate model, and LLM-powered policy narratives.**
 
-## 🚀 Project Overview
-This repository contains data analysis work implemented in Jupyter Notebooks, interactive visualizations, and structured datasets focusing on East Java's macroeconomic indicators like PDRB (Gross Regional Domestic Product), MSMEs (UMKM) growth, poverty lines, and inflation patterns.
+Selected as **Finalist** in the **Jatim Datathon 2025** (Open Data Analytics Competition) organized by Dinas Kominfo Jatim, Google, AWS, and Western Sydney University — competing against 76 teams across East Java universities.
 
-## 🌐 Live Deliverables
+---
 
-### Tableau Dashboard
-Explore the interactive data visualization dashboard:
-- **Link**: [Tableau Public Dashboard](https://public.tableau.com/app/profile/almer.daffa/viz/Book2_17568351307220/Dashboard5)
-- **Features**: Interactive charts, filters, and comprehensive data insights
+## Highlights
 
-### Streamlit Web Application
-Access the live web application:
-- **Link**: [Streamlit App](https://appdata-jnqqfyfiusykps37omc2cm.streamlit.app/)
-- **Features**: Real-time data interaction, user-friendly interface, and dynamic visualizations
+| Metric | Value |
+|--------|-------|
+| Competition | Jatim Datathon 2025 — Finalist |
+| Macro variables | 15+ (PDRB, MSME growth, poverty, inflation, etc.) |
+| Dimensionality reduction | PCA → Composite Risk Score |
+| Validation | Spearman correlation **0.9182** (p < 0.0001) against NPL |
+| Surrogate model | XGBoost — **R² = 0.9669** with SHAP/LIME interpretation |
+| Deployment | Streamlit web app + Tableau dashboard |
+| LLM integration | Translates numerical risk outputs into policy narratives |
 
-## 🛠️ Technologies Used
-- **Jupyter Notebook**: Primary environment for data storytelling and analysis
-- **Python**: Core programming language for data processing
-- **Pandas / Numpy**: Large-scale data manipulation and numerical analysis
-- **Matplotlib / Seaborn**: Statistical data visualization
+---
 
-## 📁 Repository Structure
-- `data/raw/`: Raw datasets directly sourced from local statistical bureaus (PDRB, UMK, Inflation, Poverty Rate, etc.)
-- `data/processed/`: Cleaned, merged, and transformed datasets ready for analytical modeling
-- `notebooks/`: 
-  - `Mastering_Dataset.ipynb`: Comprehensive data cleaning, merging, and preprocessing pipelines
-  - `Notebook_Datathon.ipynb`: In-depth exploratory data analysis (EDA) and advanced predictive modeling
-  - `Training.csv`: Curated final training dataset
-- `models/`: Serialized machine learning models, outputs, and model evaluation metrics
-- `src/`: Reusable Python modules and utility scripts (e.g., `data_loader.py`)
-- `main.py`: Entry point script demonstrating how to load and process data
-- `requirements.txt`: Python dependencies needed to run the notebooks and scripts
+## Repository Structure
 
-## 📈 Key Analytical Domains
-- Analysis of MSME (UMKM) failure risks and strategic interventions.
-- Evaluation of regional inflation, minimum wage (UMK) impacts, and poverty metrics across East Java districts.
-- Predictive economic growth patterns using historical demographic and agricultural data.
+```
+├── data/          # Source datasets
+├── models/        # Trained XGBoost models
+├── notebooks/     # Jupyter notebooks (EDA, PCA, modeling)
+├── app.py         # Streamlit web app
+└── main.py        # Data pipeline entry point
+```
+
+---
+
+Built with Python, XGBoost, PCA, SHAP, and Streamlit. Licensed under MIT.
