@@ -13,9 +13,9 @@
 
 ## 🎯 Overview
 
-OpenData-Jatim transforms 15+ macroeconomic indicators into actionable intelligence for East Java's economic planning. The system combines statistical rigor with modern ML to deliver models that are both **accurate** and **interpretable**.
+OpenData-Jatim transforms 13 macroeconomic indicators into actionable intelligence for East Java's economic planning. The system combines statistical rigor with modern ML to deliver models that are both **accurate** and **interpretable**.
 
-Selected as **Finalist** in the **Jatim Datathon 2025**, competing against 76 teams from across East Java universities, organized by Dinas Kominfo Jatim, Google, AWS, and Western Sydney University.
+Selected as **Finalist** in the **Jatim Datathon 2025**, competing against 76 teams from across East Java universities, organized by Jagoan Data, Google, and Western Sydney University.
 
 ---
 
@@ -73,7 +73,7 @@ Selected as **Finalist** in the **Jatim Datathon 2025**, competing against 76 te
 |--------|-------|-------------|
 | **Validation Correlation** | Spearman ρ = **0.9182** | Validated against real NPL data (p < 0.0001) |
 | **Model Accuracy** | R² = **0.9669** | XGBoost surrogate model performance |
-| **Macro Variables** | **15+** | PDRB, MSME growth, poverty, inflation, investment, etc. |
+| **Macro Variables** | **13** | PDRB, MSME growth, poverty, inflation, investment, etc. |
 | **Competition** | **Finalist** / 76 teams | Jatim Datathon 2025 — Top tier |
 | **Interpretability** | SHAP + LIME | Full model transparency for stakeholders |
 
@@ -134,7 +134,7 @@ OpenData-Jatim/
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
 | **Data Processing** | pandas, NumPy | Data cleaning, transformation |
-| **Dimensionality Reduction** | PCA | Feature extraction from 15+ macro variables |
+| **Dimensionality Reduction** | PCA | Feature extraction from 13 macro variables |
 | **ML Modeling** | XGBoost | Surrogate model with high accuracy |
 | **Interpretability** | SHAP, LIME | Model explanation for stakeholders |
 | **Validation** | SciPy | Statistical testing (Spearman correlation) |
@@ -146,7 +146,7 @@ OpenData-Jatim/
 
 ## 🔬 Methodology
 
-1. **Data Collection**: Gather 15+ macroeconomic indicators from official East Java statistics
+1. **Data Collection**: Gather 13 macroeconomic indicators from official East Java statistics
 2. **Exploratory Data Analysis**: Identify patterns, correlations, and data quality issues
 3. **Dimensionality Reduction**: PCA to create Composite Risk Score from correlated variables
 4. **Model Training**: XGBoost trained on historical data, validated against NPL (Non-Performing Loan)
