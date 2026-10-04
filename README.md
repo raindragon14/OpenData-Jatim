@@ -13,7 +13,7 @@
 
 ## 🎯 Overview
 
-OpenData-Jatim transforms 13 macroeconomic indicators into actionable intelligence for East Java's economic planning. The system combines statistical rigor with modern ML to deliver models that are both **accurate** and **interpretable**.
+OpenData-Jatim transforms 14 macroeconomic indicators into actionable intelligence for East Java's economic planning. The system combines statistical rigor with modern ML to deliver models that are both **accurate** and **interpretable**.
 
 Selected as **Finalist** in the **Jatim Datathon 2025**, competing against 76 teams from across East Java universities, organized by Jagoan Data, Google, and Western Sydney University.
 
@@ -42,7 +42,7 @@ Selected as **Finalist** in the **Jatim Datathon 2025**, competing against 76 te
           ┌───────┴───────┐
           ▼               ▼
   ┌──────────────┐  ┌───────────────┐
-  │  XGBoost     │  │  SHAP/LIME   │
+  │  XGBoost     │  │     SHAP     │
   │  Surrogate   │  │  (Explain    │
   │  Model       │  │  Ability)    │
   └──────┬───────┘  └───────┬───────┘
@@ -73,9 +73,9 @@ Selected as **Finalist** in the **Jatim Datathon 2025**, competing against 76 te
 |--------|-------|-------------|
 | **Validation Correlation** | Spearman ρ = **0.9182** | Validated against real NPL data (p < 0.0001) |
 | **Model Accuracy** | R² = **0.9669** | XGBoost surrogate model performance |
-| **Macro Variables** | **13** | PDRB, MSME growth, poverty, inflation, investment, etc. |
+| **Macro Variables** | **14** | PDRB, inflation, Gini ratio, minimum wage, investment per capita, etc. |
 | **Competition** | **Finalist** / 76 teams | Jatim Datathon 2025 — Top tier |
-| **Interpretability** | SHAP + LIME | Full model transparency for stakeholders |
+| **Interpretability** | SHAP | Full model transparency for stakeholders |
 
 ---
 
@@ -134,9 +134,9 @@ OpenData-Jatim/
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
 | **Data Processing** | pandas, NumPy | Data cleaning, transformation |
-| **Dimensionality Reduction** | PCA | Feature extraction from 13 macro variables |
+| **Dimensionality Reduction** | PCA | Feature extraction from 14 macro variables |
 | **ML Modeling** | XGBoost | Surrogate model with high accuracy |
-| **Interpretability** | SHAP, LIME | Model explanation for stakeholders |
+| **Interpretability** | SHAP | Model explanation for stakeholders |
 | **Validation** | SciPy | Statistical testing (Spearman correlation) |
 | **Visualization** | Streamlit, Tableau | Interactive dashboards & reports |
 | **LLM Integration** | OpenAI API | Policy narrative generation from data |
@@ -146,11 +146,11 @@ OpenData-Jatim/
 
 ## 🔬 Methodology
 
-1. **Data Collection**: Gather 13 macroeconomic indicators from official East Java statistics
+1. **Data Collection**: Gather 14 macroeconomic indicators from official East Java statistics
 2. **Exploratory Data Analysis**: Identify patterns, correlations, and data quality issues
 3. **Dimensionality Reduction**: PCA to create Composite Risk Score from correlated variables
 4. **Model Training**: XGBoost trained on historical data, validated against NPL (Non-Performing Loan)
-5. **Interpretation**: SHAP values explain feature contributions; LIME provides local explanations
+5. **Interpretation**: SHAP values explain feature contributions globally and locally
 6. **Narrative Generation**: LLM translates numerical risk scores into human-readable policy narratives
 7. **Deployment**: Streamlit web app + Tableau dashboard for stakeholders
 
@@ -159,7 +159,7 @@ OpenData-Jatim/
 ## 🏆 Competition Journey
 
 > **Jatim Datathon 2025** — Open Data Analytics Competition
-> Organized by: Dinas Kominfo Jatim · Google · AWS · Western Sydney University
+> Organized by: Jagoan Data · Google · Western Sydney University
 > Competing against 76 teams from East Java universities — **Finalist**
 
 ---
@@ -176,7 +176,7 @@ The project includes two presentation layers:
 
 Built by **Muhammad Reihan Pandanarang**
 
-- 📧 [Email](mailto:reihan@raindragon14.dev)
+- 📧 [Email](mailto:mrpandanarang@gmail.com)
 - 💼 [LinkedIn](https://linkedin.com/in/mreihanpandanarang)
 - 🌐 [Website](https://reihanpandanarang.my.id)
 
